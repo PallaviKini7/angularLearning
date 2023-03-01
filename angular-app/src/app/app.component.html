@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+<div>{{name}}</div>
+
+<div>{{getyourname(10,3)}}</div>
+<div>{{namingdata()}}</div>
+
+<div class="name">{{details.name}} {{details.role}}</div>
+<div>the addition result is  {{a+b}}</div>
+
+<div>{{prsentUrl}}</div>
+<button mat-button>Click Me</button>
+
+<app-login></app-login>
+<app-register></app-register>
+<app-profile></app-profile>
+
+<button mat-button color="primary" >Primary</button>
+
+<button (click)=" dataalert(2)">sdfssds</button>
+
+
+
+<button mat-button color="accent">Accent</button>
+
+Name:<input type="text" (keyup)="getvalue($any($event.target).value)">
+<h1>{{yourname}}</h1>
+
+
+Address:<input type="text" (keyup)="getaddress($any($event.target).value)">
+
+
+
+
+<!-- <router-outlet></router-outlet> -->
