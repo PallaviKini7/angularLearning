@@ -1,1 +1,15 @@
-<h1>This is the login page</h1>
+
+<div class="success">this is success content</div>
+<div class="error">this is error content</div>
+<div class="underline">this is underline</div>
+<div [className]="danger">danger line</div>
+<div [className]="multiclass">all together</div>
+<div [className]="hasError?'error':'success'">Inline texting is the propely define text.</div>
+
+<button (click)="hidngdata()"> {{ cond_vall == true ? 'Case 1' : 'Case 2' }}</button>
+<button *ngIf="hideshow">{{btntext2}}</button>
+
+<div *ngIf="age>17;else elseBlock">age is equal to 17</div>
+<ng-template #elseBlock>
+    <h1>Else block is working fine</h1>
+</ng-template>

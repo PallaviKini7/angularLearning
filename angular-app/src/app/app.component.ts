@@ -38,6 +38,18 @@ export class AppComponent {
   getaddress(val: any) {
     console.warn(val)
   }
+  num1=2;
+  num2=20;
+  sum=0;
+
+  calculate(num1:any,num2:any)
+  {
+    this.sum=num1+num2;
+  }
+  eventhandling(val:any)
+  {
+     console.log(val)
+  }
 
 
 

@@ -22,11 +22,20 @@
 
 <button mat-button color="accent">Accent</button>
 
-Name:<input type="text" (keyup)="getvalue($any($event.target).value)">
+Name:<input type="text" (keyup)="obtaindata($any($event.target).value)">
 <h1>{{yourname}}</h1>
 
+value1: <input type="text" #num1[value]="" >
+value1: <input type="text" #num1[value]=""  >
+<button (click)="calculate(num1,num2)">sum</button>
+<h1>{{sum}}</h1>
 
-Address:<input type="text" (keyup)="getaddress($any($event.target).value)">
+Enterdata:<input type="text" #txt>
+<button (click)="eventhandling(txt.value)">submit</button>
+
+
+
+
 
 
 
