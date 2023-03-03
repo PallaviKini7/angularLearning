@@ -8,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './home/home.component'
 import { UsersModule } from './users/users.module';
+import { AddressComponent } from './home/address/address.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AddressComponent,
+    
   ],
   imports: [
     BrowserModule,

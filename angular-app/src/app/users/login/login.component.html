@@ -8,8 +8,48 @@
 
 <button (click)="hidngdata()"> {{ cond_vall == true ? 'Case 1' : 'Case 2' }}</button>
 <button *ngIf="hideshow">{{btntext2}}</button>
+{{this.set}}
 
 <div *ngIf="age>17;else elseBlock">age is equal to 17</div>
 <ng-template #elseBlock>
     <h1>Else block is working fine</h1>
 </ng-template>
+
+<h2>Name Listing</h2>
+<ul>
+    <li *ngFor="let data of name" >{{data}}</li>
+    
+</ul>
+<br>
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let details of student">
+            <td>{{details.name}}</td>
+            <td>{{details.phone}}</td>
+        </tr>
+    </tbody>
+</table>

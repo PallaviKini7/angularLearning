@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-app';
   name = "Pallavi";
+  text:any;
   getyourname(a: any, b: any) {
     const sum = a + b;
     return sum;
@@ -51,6 +52,29 @@ export class AppComponent {
      console.log(val)
   }
 
+  passdata ="Passing the data from app component to child component"
 
+  setData(data:any){
+    console.log(data);
+    
+  }
+  dataget(data:any)
+  {
+        console.log(data)
+  }
+
+  loginUser:any[] =[];
+   logingUser:any={
+    uname:'',
+    pwd:''
+
+  };
+  constructor() { }
+  loginftn()
+  {
+    this.loginUser.push(this.logingUser);
+    
+    localStorage.setItem('loginUser', JSON.stringify(this.loginUser));
+  }
 
 }

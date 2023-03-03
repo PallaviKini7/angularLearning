@@ -12,7 +12,8 @@
 
 <app-login></app-login>
 <app-register></app-register>
-<app-profile></app-profile>
+<app-profile [childData]="passdata"></app-profile>
+<app-home></app-home>
 
 <button mat-button color="primary" >Primary</button>
 
@@ -33,7 +34,27 @@ value1: <input type="text" #num1[value]=""  >
 Enterdata:<input type="text" #txt>
 <button (click)="eventhandling(txt.value)">submit</button>
 
+Enterdata:<input type="text" [(ngModel)]="text">
+<button (click)="setData(text)">submit</button>
 
+<input type="text" #data>
+<button  (click)="dataget(data.value)"  >liugyuihy</button>
+
+<!-- Creati9ng a login form -->
+<div>
+    <form >
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" [(ngModel)]="logingUser.uname">
+            
+            <label for="password">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="logingUser.pwd">
+
+            <button (click)="loginftn()">Login</button>
+    
+        </div>
+    </form>
+</div>
 
 
 
