@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -70,11 +70,14 @@ export class AppComponent {
 
   };
   constructor() { }
-  loginftn()
+  loginftn(data1:any,data2:any)
   {
-    this.loginUser.push(this.logingUser);
-    
-    localStorage.setItem('loginUser', JSON.stringify(this.loginUser));
+   
   }
+  OnInit()
+  {
+    
+  }
+  
 
 }

@@ -4,3 +4,15 @@
     font-size: 20px;
     font-weight: 500;
 }
+.navSection
+{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(97, 97, 247);
+    height: 50px;
+    cursor: pointer;
+}
+.active
+{
+    color: rgb(171, 171, 83);
+}

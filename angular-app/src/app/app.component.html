@@ -1,21 +1,28 @@
-<h1>{{title}}</h1>
+<!-- <h1>{{title}}</h1>
 <div>{{name}}</div>
+<div class="navSection">
+    <div class="nav-link" routerLink="home" routerLinkActive="active">Login</div>
+    <div routerLink="profile" routerLinkActive="active">Profile</div>
+    <div routerLink="register" routerLinkActive="active">Register</div>
+    <div routerLink="personaldetails" routerLinkActive="active">Personal Details</div>
+
+</div>
 
 <div>{{getyourname(10,3)}}</div>
 <div>{{namingdata()}}</div>
 
 <div class="name">{{details.name}} {{details.role}}</div>
-<div>the addition result is  {{a+b}}</div>
+<div>the addition result is {{a+b}}</div>
 
 <div>{{prsentUrl}}</div>
-<button mat-button>Click Me</button>
+<button mat-button>Click Me</button> -->
 
-<app-login></app-login>
+<!-- <app-login></app-login>
 <app-register></app-register>
 <app-profile [childData]="passdata"></app-profile>
-<app-home></app-home>
+<app-home></app-home> -->
 
-<button mat-button color="primary" >Primary</button>
+<!-- <button mat-button color="primary">Primary</button>
 
 <button (click)=" dataalert(2)">sdfssds</button>
 
@@ -26,8 +33,8 @@
 Name:<input type="text" (keyup)="obtaindata($any($event.target).value)">
 <h1>{{yourname}}</h1>
 
-value1: <input type="text" #num1[value]="" >
-value1: <input type="text" #num1[value]=""  >
+value1: <input type="text" #num1[value]="">
+value1: <input type="text" #num1[value]="">
 <button (click)="calculate(num1,num2)">sum</button>
 <h1>{{sum}}</h1>
 
@@ -38,27 +45,15 @@ Enterdata:<input type="text" [(ngModel)]="text">
 <button (click)="setData(text)">submit</button>
 
 <input type="text" #data>
-<button  (click)="dataget(data.value)"  >liugyuihy</button>
+<button (click)="dataget(data.value)">liugyuihy</button> -->
 
 <!-- Creati9ng a login form -->
-<div>
-    <form >
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" [(ngModel)]="logingUser.uname">
-            
-            <label for="password">Password</label>
-            <input type="password" class="form-control" [(ngModel)]="logingUser.pwd">
 
-            <button (click)="loginftn()">Login</button>
-    
-        </div>
-    </form>
-</div>
+<button pButton type="button" label="Click" ></button>
 
 
 
+<app-using-prime></app-using-prime>
 
-
-
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>
+<!-- <router-outlet name="aboutroute"></router-outlet> -->

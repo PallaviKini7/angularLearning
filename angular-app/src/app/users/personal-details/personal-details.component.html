@@ -1,0 +1,18 @@
+<p>personal-details works!</p>
+<form [formGroup]="personalDetailForm">
+    <label for="firstname" >First Name</label>
+    <input type="text" formControlName="firstName" >
+    <span class="error" *ngIf="personalDetailForm.get('firstName').hasError('required') && personalDetailForm.get('firstName').touched">This is a required field</span>
+    <span class="error" *ngIf="personalDetailForm.get('firstName').hasError('pattern') && personalDetailForm.get('firstName').touched">Should be alphabets</span>
+    <label for="lastname">Last Name</label>
+    <input type="text" formControlName="lastName">
+    <label for="lastname">Email</label>
+    <input type="text" formControlName="email">
+    <span  class='error'*ngIf="personalDetailForm.get('email').hasError('required')&& personalDetailForm.get('email').touched">this is required</span>
+    <span  class='error'*ngIf="personalDetailForm.get('email').hasError('email')&& personalDetailForm.get('email').touched">Not valid email</span>
+    <label for="lastname">Phone</label>
+    <input type="text" formControlName="phone">
+    <button type="submit" (click)="submitDetails()" [disabled]="!personalDetailForm.valid">Submit</button>
+    <button (click)="resetForm()">Reset</button>
+</form>
+
